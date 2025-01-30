@@ -1,106 +1,80 @@
-# Kidney-Disease-Classification-Deep-Learning-project
+# Kidney Disease Classification - Deep Learning Project
+
+## Overview
+
+This project focuses on the classification of kidney disease using deep learning techniques. The objective is to develop a model that can accurately distinguish between healthy and diseased kidney conditions based on medical data. The project utilizes convolutional neural networks (CNNs) for image classification and analysis.
+
+## Dataset
+
+The dataset consists of medical images related to kidney disease. It includes:
+
+- Healthy kidney images
+- Diseased kidney images
+
+Preprocessing techniques such as data augmentation, normalization, and resizing are applied to enhance the dataset's quality and model performance.
+
+## Technologies Used
+
+- Python
+- TensorFlow/Keras
+- OpenCV
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+
+## Project Structure
+Kidney-Disease-Classification-Deep-Learning-project/
+│-- data/ # Dataset folder
+│-- models/ # Trained models
+│-- notebooks/ # Jupyter notebooks for experiments
+│-- src/ # Source code for preprocessing and training
+│-- requirements.txt # List of dependencies
+│-- README.md # Project documentation
+│-- train.py # Model training script
+│-- evaluate.py # Model evaluation script
 
 
-## Workflows
+## Installation
 
-1. Update config.yaml
-2. Update secrets.yaml [Optional]
-3. Update params.yaml
-4. Update the entity
-5. Update the configuration manager in src config
-6. Update the components
-7. Update the pipeline 
-8. Update the main.py
-9. Update the dvc.yaml
-10. app.py
+1. Clone the repository:
 
-# How to run?
-### STEPS:
+    ```bash
+    git clone https://github.com/SyedRizwan165/Kidney-Disease-Classification-Deep-Learning-project.git
+    ```
 
-Clone the repository
+2. Navigate to the project directory:
+
+    ```bash
+    cd Kidney-Disease-Classification-Deep-Learning-project
+    ```
+
+3. Create a virtual environment (optional but recommended):
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+4. Install dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Run
+
+To train the model, run:
 
 ```bash
-https://github.com/krishnaik06/Kidney-Disease-Classification-Deep-Learning-Project
-```
-### STEP 01- Create a conda environment after opening the repository
-
-```bash
-conda create -n cnncls python=3.8 -y
-```
-
-```bash
-conda activate cnncls
-```
-
-
-### STEP 02- install the requirements
-```bash
-pip install -r requirements.txt
-```
-
-```bash
-# Finally run the following command
 python app.py
 ```
 
-Now,
-```bash
-open up you local host and port
-```
+## Future Improvements
 
+- Enhance dataset size and quality.
 
+- Optimize model architecture.
 
+- Implement hyperparameter tuning for better performance.
 
-
-
-## MLflow
-
-- [Documentation](https://mlflow.org/docs/latest/index.html)
-
-- [MLflow tutorial](https://youtu.be/qdcHHrsXA48?si=bD5vDS60akNphkem)
-
-##### cmd
-- mlflow ui
-
-### dagshub
-[dagshub](https://dagshub.com/)
-
-MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow \
-MLFLOW_TRACKING_USERNAME=entbappy \
-MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0 \
-python script.py
-
-Run this to export as env variables:
-
-```bash
-
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow
-
-export MLFLOW_TRACKING_USERNAME=entbappy 
-
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
-
-```
-
-
-### DVC cmd
-
-1. dvc init
-2. dvc repro
-3. dvc dag
-
-
-## About MLflow & DVC
-
-MLflow
-
- - Its Production Grade
- - Trace all of your expriements
- - Logging & taging your model
-
-
-DVC 
-
- - Its very lite weight for POC only
- - lite weight expriements tracker
- - It can perform Orchestration (Creating Pipelines)
