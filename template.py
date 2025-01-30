@@ -1,11 +1,11 @@
-import os 
+import os
 from pathlib import Path
 import logging
 
-# logging string 
+#logging string
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = 'Classification'
+project_name = 'cnnClassifier'
 
 list_of_files = [
     ".github/workflows/.gitkeep",
