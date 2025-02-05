@@ -24,15 +24,16 @@ Preprocessing techniques such as data augmentation, normalization, and resizing 
 - Scikit-learn
 
 ## Project Structure
+
 Kidney-Disease-Classification-Deep-Learning-project/
-│-- data/ # Dataset folder
-│-- models/ # Trained models
-│-- notebooks/ # Jupyter notebooks for experiments
-│-- src/ # Source code for preprocessing and training
-│-- requirements.txt # List of dependencies
-│-- README.md # Project documentation
-│-- train.py # Model training script
-│-- evaluate.py # Model evaluation script
+- │-- data/ # Dataset folder
+- │-- models/ # Trained models
+- │-- notebooks/ # Jupyter notebooks for experiments
+- │-- src/ # Source code for preprocessing and training
+- │-- requirements.txt # List of dependencies
+- │-- README.md # Project documentation
+- │-- train.py # Model training script
+- │-- evaluate.py # Model evaluation script
 
 
 ## Installation
